@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TO DO List</title>
+    <meta name="description">
+    <meta name="viewport" content="width-device-width, initial-scale=1 ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body  {
+            background-color: #F7F6F2;
+            font-family: 'Roboto Condensed', sans-serif;
+            padding-top: 50px;
+        }
+
+
+
+        .container {
+            max-width: 550px;
+            margin: auto;
+            background-color: #F5F5F5;
+            -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+                    box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+            }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+            {
+            font-family: 'Raleway', sans-serif;
+        }
+
+        a
+        {
+            color: #1C6DD0;
+            font-weight: 700;
+        }
+
+         p
+         {
+            color: #334756
+         }
+
+        .header{
+            display: flex;
+            justify-content: space-between;
+            color: #fff;
+            font-weight: 700;
+            padding: 1rem;
+            border-radius: 10px 10px 0 0;
+            background-color: #f8ceec;
+            background: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+        }
+
+        .header a {
+            color: #fff;
+            text-decoration:none;
+        }
+
+
+
+        .task-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #fff;
+            border-top: 1px solid #dfe4ea;
+            padding: 0.5rem;
+            overflow: hidden;
+        }
+
+         .task-title {
+            display: flex;
+            padding: 1rem;
+        }
+
+        .task-title a {
+            text-decoration: none;
+            color: #4b5156;
+            margin-left: 10px;
+        }
+
+        .task-complete-icon {
+            height: 20px;
+            width: 20px;
+            background-color: #00A19D;
+            border-radius: 50%;
+        }
+
+        .task-incomplete-icon {
+            height: 20px;
+            width: 20px;
+            background-color: #DD4A48;
+            border-radius: 50%;
+        }
+
+        .delete-task {
+            text-decoration: none;
+            font-weight: 900;
+            color: #cf4949;
+            font-size: 22px;
+            line-height: 0;
+            padding: 20px 0px;
+        }
+
+        #add-link {
+            color: #00A19D;
+            text-decoration: none;
+            font-size: 42px;
+            text-shadow: .5px .5px #81413b;
+        }
+
+        #task-search {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #fefafd;
+        }
+
+        input[type=text],
+        input[type=password],
+        textarea {
+            border: 0.5px solid #CAB8FF;
+            border-radius: 5px;
+            padding: 10px;
+            width: 90%;
+        }
+
+        label {
+            padding-top: 0.5rem !important;
+            display: block;
+        }
+
+        ::placeholder {
+            font-weight: 300;
+            opacity: 0.5;
+        }
+
+        .search-btn {
+            border: 0.5px solid #CAB8FF;
+            border-radius: 5px;
+            background-color: white;
+            color: black;
+            padding: 0.5rem;
+            font-size: 14px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .card-body {
+            padding: 20px;
+            background-color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    {% block content %}
+
+
+    {% endblock content %}
+
+</div>
+
+</body>
+</html>
